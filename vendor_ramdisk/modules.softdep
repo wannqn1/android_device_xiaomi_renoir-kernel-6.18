@@ -1,0 +1,21 @@
+# Soft dependencies extracted from modules themselves.
+softdep ufs_qcom pre: qcom-cpufreq-hw
+softdep qcom_scmi_vendor pre: qcom_cpucp
+softdep pinctrl_msm pre: qcom-pdc
+softdep qcom_pmu_lib pre: qcom_scmi_client
+softdep qcom_scmi_client pre: qcom_scmi_vendor
+softdep smem pre: qcom_hwspinlock
+softdep rdbg pre: smp2p
+softdep si_core_module pre: qcom-scm
+softdep r8169 pre: realtek
+softdep memlat pre: qcom_scmi_client
+softdep qsee_ipc_irq_bridge pre: qcom_ipcc
+softdep dwc3_msm pre: phy-generic phy-msm-snps-hs phy-msm-ssusb-qmp eud
+softdep ipam pre: subsys-pil-tz
+softdep ipam pre: qcom-arm-smmu-mod
+softdep machine_dlkm pre: bt_fm_slim
+softdep msm_kgsl pre: arm_smmu nvmem_qfprom socinfo governor_msm_adreno_tz governor_gpubw_mon governor_msm_adreno_ro
+softdep msm_vidc pre: subsys-pil-tz
+softdep q6_notifier_dlkm pre: qcom_q6v5_pas
+softdep smcinvoke_dlkm pre: si_core_module
+softdep pci_msm_drv pre: i2c_msm_geni

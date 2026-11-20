@@ -286,6 +286,10 @@ alias of:N*T*Cqcom,pmk8350-rtcC* rtc_pm8xxx
 alias of:N*T*Cqcom,pm5100-rtc rtc_pm8xxx
 alias of:N*T*Cqcom,pm5100-rtcC* rtc_pm8xxx
 alias char-major-21-* sg
+alias of:N*T*Cqcom,msm-watchdog qcom_soc_wdt
+alias of:N*T*Cqcom,msm-watchdogC* qcom_soc_wdt
+alias of:N*T*Cqcom,lahaina-epss-l3-cpu epss_l3
+alias of:N*T*Cqcom,lahaina-epss-l3-cpuC* epss_l3
 alias of:N*T*Cqcom,cmd-db cmd_db
 alias of:N*T*Cqcom,cmd-dbC* cmd_db
 alias of:N*T*Cqcom,cam-crm-v2 crm_v2

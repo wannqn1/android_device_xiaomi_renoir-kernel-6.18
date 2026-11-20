@@ -50,6 +50,9 @@ rtc-pm8xxx.ko:
 sg.ko:
 dcvs_fp.ko: qcom_rpmh.ko cmd-db.ko crm-v2.ko qcom_ipc_logging.ko minidump.ko smem.ko debug_symbol.ko
 qcom-dcvs.ko: dcvs_fp.ko qcom_rpmh.ko cmd-db.ko crm-v2.ko qcom_ipc_logging.ko minidump.ko smem.ko debug_symbol.ko
+qcom_wdt_core.ko: minidump.ko smem.ko debug_symbol.ko qcom-scm.ko
+qcom_soc_wdt.ko: qcom_wdt_core.ko minidump.ko smem.ko debug_symbol.ko qcom-scm.ko
+epss-l3.ko:
 qcom-pmu-lib.ko: qcom_llcc_pmu.ko qcom_scmi_client.ko
 qcom_scmi_client.ko:
 mem_buf_dev.ko: secure_buffer.ko qcom-scm.ko
@@ -233,6 +236,7 @@ rust_binder.ko:
 btqca.ko: bluetooth.ko rfkill.ko
 btbcm.ko: bluetooth.ko rfkill.ko
 adsp_loader_dlkm.ko: apr_dlkm.ko q6_notifier_dlkm.ko q6_pdr_dlkm.ko snd_event_dlkm.ko pdr_interface.ko rproc_qcom_common.ko qcom_smd.ko qcom_glink_smem.ko qcom_glink.ko qcom_pdr_msg.ko qmi_helpers.ko qcom_ipc_logging.ko minidump.ko smem.ko debug_symbol.ko
+mmhardware.ko:
 apr_dlkm.ko: q6_notifier_dlkm.ko q6_pdr_dlkm.ko snd_event_dlkm.ko pdr_interface.ko rproc_qcom_common.ko qcom_smd.ko qcom_glink_smem.ko qcom_glink.ko qcom_pdr_msg.ko qmi_helpers.ko qcom_ipc_logging.ko minidump.ko smem.ko debug_symbol.ko
 bolero_cdc_dlkm.ko: q6_dlkm.ko apr_dlkm.ko q6_notifier_dlkm.ko q6_pdr_dlkm.ko snd_event_dlkm.ko pdr_interface.ko rproc_qcom_common.ko qcom_smd.ko qcom_glink_smem.ko qcom_glink.ko qcom_pdr_msg.ko qmi_helpers.ko qti-regmap-debugfs.ko qcom_ipc_logging.ko minidump.ko smem.ko debug_symbol.ko qcom-scm.ko
 bt_fm_slim.ko: btpower.ko rfkill.ko slimbus.ko

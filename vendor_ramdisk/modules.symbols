@@ -1016,6 +1016,7 @@ alias symbol:cam_res_mgr_gpio_request camera
 alias symbol:gsi_ctx gsim
 alias symbol:q6asm_stream_media_format_block_vorbis q6_dlkm
 alias symbol:qcom_scm_dcvs_ca_available qcom_scm
+alias symbol:qcom_wdt_register qcom_wdt_core
 alias symbol:__drm_atomic_helper_connector_hdmi_reset drm_display_helper
 alias symbol:clk_alpha_pll_fixed_ops clk_qcom
 alias symbol:qce_f9_req qce50_dlkm
@@ -1585,6 +1586,7 @@ alias symbol:msm_dss_clk_set_rate msm_drm
 alias symbol:wcd938x_get_micb_vout_ctl_val wcd938x_dlkm
 alias symbol:htt_htc_misc_pkt_list_add wlan
 alias symbol:ieee80211_ie_split_ric cfg80211
+alias symbol:qcom_wdt_remove qcom_wdt_core
 alias symbol:utils_dfs_unmark_precac_nol_for_freq wlan
 alias symbol:cal_utils_alloc_cal q6_dlkm
 alias symbol:hif_napi_poll wlan
@@ -1841,6 +1843,7 @@ alias symbol:swr_remove_from_group swr_dlkm
 alias symbol:ufs_qcom_phy_dbg_register_dump phy_qcom_ufs
 alias symbol:swr_device_wakeup_vote swr_dlkm
 alias symbol:ipa3_eth_disconnect ipam
+alias symbol:qcom_wdt_pet_resume qcom_wdt_core
 alias symbol:wlan_register_spectral_wmi_ops wlan
 alias symbol:wlan_sm_transition_to wlan
 alias symbol:qdf_is_driver_state_module_stop wlan
@@ -2055,6 +2058,7 @@ alias symbol:voc_end_voice_call q6_dlkm
 alias symbol:ufs_qcom_phy_tx_hs_equalizer_config phy_qcom_ufs
 alias symbol:dp_wdi_event_handler wlan
 alias symbol:ipa_send_msg ipam
+alias symbol:qcom_wdt_pet_suspend qcom_wdt_core
 alias symbol:qcom_glink_smem_register qcom_glink_smem
 alias symbol:qdf_dp_get_verbosity wlan
 alias symbol:rmnet_frag_deliver rmnet_core
@@ -2216,6 +2220,7 @@ alias symbol:hif_reg_write wlan
 alias symbol:q6lsm_set_afe_data_format q6_dlkm
 alias symbol:qdf_debugfs_create_blob wlan
 alias symbol:swr_new_device swr_dlkm
+alias symbol:on_calibration_under_mmsysfs mmhardware
 alias symbol:pmic_glink_write qti_pmic_glink
 alias symbol:thermal_pause_notifier_unregister thermal_pause
 alias symbol:cfg80211_chandef_dfs_usable cfg80211
@@ -2734,6 +2739,7 @@ alias symbol:qcom_scm_ocmem_lock qcom_scm
 alias symbol:qcrypto_aead_set_flag qcrypto_msm_dlkm
 alias symbol:qdf_mtrace wlan
 alias symbol:cmd_db_ready cmd_db
+alias symbol:qcom_wdt_trigger_bite qcom_wdt_core
 alias symbol:rfkill_unregister rfkill
 alias symbol:rndis_ipa_pipe_connect_notify ipam
 alias symbol:adm_param_enable_v2 q6_dlkm
@@ -3973,6 +3979,7 @@ alias symbol:ucfg_wlan_vdev_mgr_get_param_bssid wlan
 alias symbol:create_ctx_debugfs qcom_ipc_logging
 alias symbol:afe_set_lc3_channel_mode q6_dlkm
 alias symbol:cfg80211_rx_control_port cfg80211
+alias symbol:register_kobj_under_mmsysfs mmhardware
 alias symbol:geni_gsi_ch_start msm_gpi
 alias symbol:qdf_dp_trace_record_event wlan
 alias symbol:qdf_wake_lock_release wlan

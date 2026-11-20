@@ -6,14 +6,14 @@ overlay validation passed. The complete ROM build and boot are unverified.
 
 | Source repository | Revision |
 | --- | --- |
-| [Kernel](https://github.com/wannqn1/android_kernel_xiaomi_sm7350) | `dc9b4cf5fc48235be4b8b90b53ab9b0586a9ef5d` |
-| [Device trees](https://github.com/wannqn1/android_kernel_xiaomi_sm7350-devicetrees) | `ab735cc44d85f053d1b63cc4e4ebdd70fe5d33f0` |
+| [Kernel](https://github.com/wannqn1/android_kernel_xiaomi_sm7350) | `e0b22baeab6794d5f9f44428359c32a5c2989c4c` |
+| [Device trees](https://github.com/wannqn1/android_kernel_xiaomi_sm7350-devicetrees) | `3752a09df9858c7c9a047a0010287017e08dae94` |
 | [External modules](https://github.com/wannqn1/android_kernel_xiaomi_sm7350-modules) | `999fadfb7deff2afaf93fda97d00dbceef991fde` |
 
 Build the kernel, DT images, and modules together when updating this package.
 
-The package restores the legacy `/sys/mm_hardware` diagnostics and the Shima
-EPSS L3 interconnect provider. The legacy L3 latency governor and CVP
-accelerator still require a 6.18 port. The Qualcomm watchdog modules are
-included for device testing, with the watchdog node disabled in the Renoir
-device tree.
+The package includes the legacy multimedia hardware diagnostics, Shima EPSS
+L3 provider, per-core L3 memory latency voting, and DDR and LLCC scaling through
+Qualcomm DCVS. The CVP accelerator still needs hardware validation before
+inclusion. The Qualcomm watchdog modules are included for device testing, with
+the watchdog node disabled in the Renoir device tree.

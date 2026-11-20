@@ -8,7 +8,7 @@ overlay validation passed. The complete ROM build and boot are unverified.
 | --- | --- |
 | [Kernel](https://github.com/wannqn1/android_kernel_xiaomi_sm7350) | `2db0cd1d5ce4a5376dd23cd810dafca52453ceaa` |
 | [Device trees](https://github.com/wannqn1/android_kernel_xiaomi_sm7350-devicetrees) | `1c1c2aff30ebbaa24aa08ddd687a20c566ec4635` |
-| [External modules](https://github.com/wannqn1/android_kernel_xiaomi_sm7350-modules) | `2dd3142ec46a126289f67a41a74d9a7a44490cea` |
+| [External modules](https://github.com/wannqn1/android_kernel_xiaomi_sm7350-modules) | `a9b97cbf93b0663bab2b4fa6b638506520ae7d12` |
 
 Build the kernel, DT images, and modules together when updating this package.
 

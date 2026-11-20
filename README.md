@@ -6,14 +6,18 @@ overlay validation passed. The complete ROM build and boot are unverified.
 
 | Source repository | Revision |
 | --- | --- |
-| [Kernel](https://github.com/wannqn1/android_kernel_xiaomi_sm7350) | `e0b22baeab6794d5f9f44428359c32a5c2989c4c` |
-| [Device trees](https://github.com/wannqn1/android_kernel_xiaomi_sm7350-devicetrees) | `3752a09df9858c7c9a047a0010287017e08dae94` |
-| [External modules](https://github.com/wannqn1/android_kernel_xiaomi_sm7350-modules) | `999fadfb7deff2afaf93fda97d00dbceef991fde` |
+| [Kernel](https://github.com/wannqn1/android_kernel_xiaomi_sm7350) | `2db0cd1d5ce4a5376dd23cd810dafca52453ceaa` |
+| [Device trees](https://github.com/wannqn1/android_kernel_xiaomi_sm7350-devicetrees) | `1c1c2aff30ebbaa24aa08ddd687a20c566ec4635` |
+| [External modules](https://github.com/wannqn1/android_kernel_xiaomi_sm7350-modules) | `2dd3142ec46a126289f67a41a74d9a7a44490cea` |
 
 Build the kernel, DT images, and modules together when updating this package.
 
-The package includes the legacy multimedia hardware diagnostics, Shima EPSS
-L3 provider, per-core L3 memory latency voting, and DDR and LLCC scaling through
-Qualcomm DCVS. The CVP accelerator still needs hardware validation before
-inclusion. The Qualcomm watchdog modules are included for device testing, with
-the watchdog node disabled in the Renoir device tree.
+The package includes multimedia hardware diagnostics and Qualcomm DCVS
+scaling for the L3 cache, DDR, and LLCC. The Qualcomm watchdog modules are
+included with the watchdog node disabled pending reset and suspend tests.
+
+The kernel source provides a `cvp` target that stages a separate 315-module
+test package with the CVP-enabled DTB and the CVP and SYNX modules. Its
+firmware files, reserved memory, module dependencies, and DT overlay pass
+static checks. EVASS startup and CVP sessions still need testing on a Renoir
+handset.

@@ -770,6 +770,10 @@ alias of:N*T*Cregulator-fixed-clockC* qti_fixed_regulator
 alias of:N*T*Cregulator-fixed-domain qti_fixed_regulator
 alias of:N*T*Cregulator-fixed-domainC* qti_fixed_regulator
 alias platform:pm8008-regulator qcom_pm8008_regulator
+alias of:N*T*Cqcom,pm8008-regulator pm8008_renoir
+alias of:N*T*Cqcom,pm8008-regulatorC* pm8008_renoir
+alias of:N*T*Cqcom,pm8008-chip pm8008_renoir
+alias of:N*T*Cqcom,pm8008-chipC* pm8008_renoir
 alias of:N*T*Cqcom,msm8226-adsp-pil qcom_q6v5_pas
 alias of:N*T*Cqcom,msm8226-adsp-pilC* qcom_q6v5_pas
 alias of:N*T*Cqcom,msm8953-adsp-pil qcom_q6v5_pas

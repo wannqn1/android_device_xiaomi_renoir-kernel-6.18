@@ -11,9 +11,8 @@ overlay validation passed. The complete ROM build and boot are unverified.
 | [External modules](https://github.com/wannqn1/android_kernel_xiaomi_sm7350-modules) | `a9b97cbf93b0663bab2b4fa6b638506520ae7d12` |
 
 The header archive contains the ARM64 Linux UAPI and the Qualcomm module
-UAPI from those same source revisions. LineageOS calls
-`make -C headers O=<output> headers_install` during the ROM build to expose
-the headers to the vendor HALs.
+UAPI from those same source revisions. Soong extracts each header as a declared build
+output and exports the include directory to the Qualcomm HALs.
 
 Build the kernel, DT images, and modules together when updating this package.
 The kernel staging script regenerates the header archive.

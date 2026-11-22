@@ -87,6 +87,7 @@ genrule {
         "usr/include/linux/qseecom_api.h",
         "usr/include/linux/qti-smmu-proxy.h",
         "usr/include/linux/qti_virtio_mem.h",
+        "usr/include/linux/rmnet_data.h",
         "usr/include/linux/rmnet_ipa_fd_ioctl.h",
         "usr/include/linux/slatecom_interface.h",
         "usr/include/linux/smcinvoke.h",
